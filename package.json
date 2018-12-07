@@ -1,0 +1,23 @@
+{
+  "name": "probot-tweets",
+  "version": "1.0.0",
+  "description": "Probot app to tweet updates about an orgs issues and PRs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/haxzie/probot-tweets.git"
+  },
+  "keywords": [
+    "probot",
+    "twitter"
+  ],
+  "author": "haxzie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haxzie/probot-tweets/issues"
+  },
+  "homepage": "https://github.com/haxzie/probot-tweets#readme"
+}
