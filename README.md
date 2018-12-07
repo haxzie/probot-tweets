@@ -1,6 +1,6 @@
 # probot-tweets
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that Probot app to tweet updates on an orgs repos
+> A GitHub App built with [Probot](https://github.com/probot/probot) that tweets updates on an organization's public repositories
 
 ## Setup
 
