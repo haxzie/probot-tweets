@@ -1,1 +1,7 @@
-<html><body>You are being <a href="https://raw.githubusercontent.com/probot/probot/master/.gitignore">redirected</a>.</body></html>
+node_modules
+npm-debug.log
+*.pem
+.env
+package-lock.json
+coverage
+cache

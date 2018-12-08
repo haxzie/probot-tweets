@@ -4,7 +4,10 @@
   "description": "Probot app to tweet updates about an orgs issues and PRs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,35 @@
   "bugs": {
     "url": "https://github.com/haxzie/probot-tweets/issues"
   },
-  "homepage": "https://github.com/haxzie/probot-tweets#readme"
+  "homepage": "https://github.com/haxzie/probot-tweets#readme",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "probot": "^7.2.0",
+    "dotenv": "^6.2.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  }
 }
